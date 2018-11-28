@@ -1,5 +1,7 @@
 $(function() {
-  $.getJSON("/I AM INVINCIBLE.json").then(function(data) {
+  $.getJSON(window.location.pathname + "I AM INVINCIBLE.json").then(function(
+    data
+  ) {
     $(".loading-message").remove();
     $("#lookup").click(function() {
       const val = $("#postcode").val();
